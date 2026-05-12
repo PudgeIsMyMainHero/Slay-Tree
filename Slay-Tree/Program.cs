@@ -82,8 +82,6 @@ namespace Slay_Tree
             writer.WriteLine($"Search;{searchTimes[i].ToString("F6", culture)};{searchOps[i]}");
         for (int i = 0; i < deleteTimes.Count; i++) 
             writer.WriteLine($"Delete;{deleteTimes[i].ToString("F6", culture)};{deleteOps[i]}");
-
-        Console.WriteLine("\n✅ Данные сохранены в results.csv");
         }
     }
 }
