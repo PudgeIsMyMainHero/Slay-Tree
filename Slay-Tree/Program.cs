@@ -23,8 +23,7 @@ namespace Slay_Tree
         var searchOps = new List<int>();
         var deleteTimes = new List<double>();
         var deleteOps = new List<int>();
-
-        // 3. Вставка
+        
         Console.WriteLine("🔹 Вставка 10000 элементов...");
         foreach (var val in array)
         {
@@ -35,7 +34,6 @@ namespace Slay_Tree
             insertOps.Add(tree.Operations);
         }
 
-        // 4. Поиск 100 случайных
         Console.WriteLine("🔍 Поиск 100 случайных элементов...");
         var searchIndices = Enumerable.Range(0, 100).Select(_ => rng.Next(10000)).ToArray();
         foreach (var idx in searchIndices)
@@ -47,7 +45,6 @@ namespace Slay_Tree
             searchOps.Add(tree.Operations);
         }
 
-        // 5. Удаление 1000 случайных
         Console.WriteLine("🗑️ Удаление 1000 случайных элементов...");
         var deleteIndices = Enumerable.Range(0, 1000).Select(_ => rng.Next(10000)).Distinct().Take(1000).ToArray();
         foreach (var idx in deleteIndices)
@@ -59,7 +56,6 @@ namespace Slay_Tree
             deleteOps.Add(tree.Operations);
         }
 
-        // 6. Средние значения
         var avgInsertTime = insertTimes.Average();
         var avgInsertOps = insertOps.Average();
         var avgSearchTime = searchTimes.Average();

@@ -16,7 +16,7 @@
         else x.Parent.Right = y;
         y.Left = x;
         x.Parent = y;
-        Operations += 3; // обновления указателей
+        Operations += 3; 
     }
 
     private void RotateRight(Node x)
@@ -37,7 +37,7 @@
     {
         while (x.Parent != null)
         {
-            Operations++; // проверка родителя
+            Operations++; 
             if (x.Parent.Parent == null)
             {
                 if (x == x.Parent.Left) RotateRight(x.Parent);
@@ -107,7 +107,7 @@
     public bool Delete(int key)
     {
         Operations = 0;
-        Search(key); // поднимает key в корень, если он есть
+        Search(key); 
         if (Root == null || Root.Key != key) return false;
 
         Node oldRoot = Root;
