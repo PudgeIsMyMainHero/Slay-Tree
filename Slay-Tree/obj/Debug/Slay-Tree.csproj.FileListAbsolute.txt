@@ -1,0 +1,6 @@
+C:\University\Slay-Tree\Slay-Tree\bin\Debug\Slay_Tree.exe
+C:\University\Slay-Tree\Slay-Tree\bin\Debug\Slay_Tree.pdb
+C:\University\Slay-Tree\Slay-Tree\obj\Debug\Slay-Tree.csproj.AssemblyReference.cache
+C:\University\Slay-Tree\Slay-Tree\obj\Debug\Slay-Tree.csproj.CoreCompileInputs.cache
+C:\University\Slay-Tree\Slay-Tree\obj\Debug\Slay_Tree.exe
+C:\University\Slay-Tree\Slay-Tree\obj\Debug\Slay_Tree.pdb
